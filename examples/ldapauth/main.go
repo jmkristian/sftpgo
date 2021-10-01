@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	rootDN       = "dc=example,dc=com"
+	rootDN       = "dc=jkristian,dc=com"
 	bindUsername = "cn=sftpgo," + rootDN
 	bindURL      = "ldap:///" // That is, the server on the default port of localhost.
 	passwordFile = "/etc/sftpgo/admin-password.txt" // make this file readable only by the server
