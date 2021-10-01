@@ -12,7 +12,7 @@
                                         class="user-custom">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user-custom"
-                                                id="inputUsername" name="username" placeholder="Username" required>
+                                                id="inputUsername" name="username" placeholder="Call Sign" required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user-custom"
@@ -23,8 +23,11 @@
                                             Login
                                         </button>
                                     </form>
-                                    {{if .AltLoginURL}}
                                     <hr>
+                                    <div class="text-center">
+                                        <a class="small" href="/user/selfadd" target="_blank">Create an Account</a>
+                                    </div>
+                                    {{if .AltLoginURL}}
                                     <div class="text-center">
                                         <a class="small" href="{{.AltLoginURL}}">Web Admin</a>
                                     </div>
